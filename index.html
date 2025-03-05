@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Sasi Afrila</title>
+    <link rel="stylesheet" href="style.css"> <!-- Hubungkan ke file CSS -->
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-info">
+            <h1>SASI AFRILA PUTRI PRAYUDISTI</h1>
+            <p>102022300307 / Fakultas Rekayasa Industri / Sistem Informasi</p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sasiafrila/" class="linkedin" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/ssafrla" class="instagram" target="_blank">Instagram</a>
+                <a href="https://github.com/dashboard" class="github" target="_blank">Github</a>
+            </div>
+
+            <!-- Tanggal & Waktu -->
+            <div class="date-time">
+                <!-- Anda bisa memasukkan waktu manual atau menggunakan JavaScript untuk menampilkan waktu dinamis -->
+                <p id="current-date-time"></p>
+            </div>
+        </div>
+        <div class="profile-photo">
+            <img src="FOTO PINK 2.jpg" alt="Foto Sasi Afrila">
+        </div>
+    </div>
+
+    <script>
+        // Menampilkan waktu secara dinamis menggunakan JavaScript
+        const currentDateTime = new Date();
+        const formattedDate = currentDateTime.toLocaleString('id-ID', { 
+            weekday: 'long', 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric', 
+            hour: '2-digit', 
+            minute: '2-digit', 
+            second: '2-digit' 
+        });
+        document.getElementById('current-date-time').textContent = formattedDate;
+    </script>
+</body>
+</html>
